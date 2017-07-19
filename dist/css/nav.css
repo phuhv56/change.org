@@ -1,3 +1,14 @@
+body .container {
+    width: 55%;
+}
+
+.type-loaded {
+    font-family: "Change Calibre", Helvetica,Arial,Tahoma, sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+}
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(237, 60, 51, 1);
 }
@@ -35,4 +46,97 @@
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #888;
+}
+
+.jumbotron .text-center p a {
+    color: rgba(237, 60, 51, 1);
+    text-decoration: underline;
+}
+
+.jumbotron .text-center h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.current_user {
+    font-style: oblique;
+}
+
+.jumbotron .text-center p a:hover {
+    color: #575357;
+    text-decoration: underline;
+}
+
+.jumbotron .text-center p button {
+    background: #ec2c22;
+}
+
+.jumbotron .text-center p button:hover {
+    background: #DC1D13;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+    }
+    .navbar-toggle {
+        border: none;
+        background: none;
+    }
+    .navbar-toggle:focus {
+        background-color: #FFF;
+    }
+    .navbar-toggle:hover {
+        background-color: #FFF;
+    }
+    
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"] > span {
+        display: none;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"]:before {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"]:before {
+        color: rgba(237, 60, 51, 1);
+        content: "Login or Signup";
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"] > span {
+        display: none;
+    }
+
 }
