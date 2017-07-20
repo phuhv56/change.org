@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+    .jumbotron .text-center p a {
+        color: rgba(237, 60, 51, 1);
+        text-decoration: underline;
+    }
+    .jumbotron .text-center h1 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .jumbotron .text-center .current_user {
+        font-style: oblique;
+        font-size: 18px;
+    }
+    .jumbotron .text-center p a:hover {
+        color: #575357;
+        text-decoration: underline;
+    }
+    .jumbotron .text-center p button {
+        background: #ec2c22;
+    }
+    .jumbotron .text-center p button:hover {
+        background: #DC1D13;
+    }
+    .jumbotron {
+        background: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .jumbotron .text-center p a {
+        color: rgba(237, 60, 51, 1);
+        text-decoration: underline;
+    }
+    .jumbotron .text-center h1 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .jumbotron .text-center .current_user {
+        font-style: oblique;
+        font-size: 18px;
+    }
+    .jumbotron .text-center p a:hover {
+        color: #575357;
+        text-decoration: underline;
+    }
+    .jumbotron .text-center p button {
+        background: #ec2c22;
+    }
+    .jumbotron .text-center p button:hover {
+        background: #DC1D13;
+    }
+    .jumbotron {
+        background: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
