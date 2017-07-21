@@ -29,27 +29,33 @@
     background-color: rgba(231, 231, 231, 0);
 }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ddd;
-}
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    color: rgba(237, 60, 51, 1);
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+    color: rgba(237, 60, 51, 1);
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #888;
+    color: rgba(237, 60, 51, 1);
 }
 
-@media (max-width: 992px) {
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+@media (max-width: 990px) {
     .navbar-header {
         float: none;
+        padding: 0px;
     }
     .navbar-left,
     .navbar-right {
@@ -57,10 +63,22 @@
     }
     .navbar-toggle {
         display: block;
+        position: relative;
+    }
+    .container-fluid {
+        position: relative;
     }
     .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        margin-top: 8px;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        background-color: white;
+        width: 200px;
+        right: 0px;
+        position: absolute;
+        border-bottom-right-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
     }
     .navbar-fixed-top {
         top: 0;
@@ -83,23 +101,20 @@
     .collapse.in {
         display: block !important;
     }
-    .navbar-toggle {
-        border: none;
-        background: none;
-    }
     .navbar-toggle:focus {
         background-color: #FFF;
     }
     .navbar-toggle:hover {
         background-color: #FFF;
     }
+    .navbar-default .navbar-toggle {
+        border-color: none;
+    }
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"]>span {
         display: none;
     }
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"]:before {
-        height: 12px;
-        border: 0;
-        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        display: none;
     }
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"]:before {
         color: rgba(237, 60, 51, 1);
@@ -107,82 +122,5 @@
     }
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"]>span {
         display: none;
-    }
-    .navbar {
-        margin-bottom: 0;
-    }
-    .navbar-brand {
-        font-weight: bold;
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1368px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,
-    .navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in {
-        display: block !important;
-    }
-    .navbar-toggle {
-        border: none;
-        background: none;
-    }
-    .navbar-toggle:focus {
-        background-color: #FFF;
-    }
-    .navbar-toggle:hover {
-        background-color: #FFF;
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"]>span {
-        display: none;
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="search"]:before {
-        height: 12px;
-        border: 0;
-        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"]:before {
-        color: rgba(237, 60, 51, 1);
-        content: "Login or Signup";
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a[href="login"]>span {
-        display: none;
-    }
-    .navbar {
-        margin-bottom: 0;
-    }
-    .navbar-brand {
-        font-weight: bold;
-        font-size: 28px;
     }
 }

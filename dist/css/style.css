@@ -1,4 +1,4 @@
-@media (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     body .container {
         width: 55%;
         min-width: 940px;
@@ -9,29 +9,24 @@
     .main-content {
         width: 100%;
         background-size: 1200px;
-        /* background-image: url(../img/background-world-map.gif); */
+        background-image: url(../img/background-world-map.gif);
         background-repeat: no-repeat;
         background-position: 50% -130px;
         background-position-x: 50%;
         background-position-y: -130px;
     }
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-@media (max-width: 1368px) {
-    body .container {
-        width: 55%;
-        min-width: 940px;
-    }
-    .type-loaded {
-        font-family: "Change Calibre", Helvetica, Arial, Tahoma, sans-serif;
-    }
-    .main-content {
-        width: 100%;
-        background-size: 1200px;
-        /* background-image: url(../img/background-world-map.gif); */
-        background-repeat: no-repeat;
-        background-position: 50% -130px;
-        background-position-x: 50%;
-        background-position-y: -130px;
-    }
+.main-content {
+    width: 100%;
+    background-size: 1200px;
+    background-image: url(../img/background-world-map.gif);
+    background-repeat: no-repeat;
+    background-position: 50% -130px;
+    background-position-x: 50%;
+    background-position-y: -130px;
 }
