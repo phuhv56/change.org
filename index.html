@@ -52,11 +52,13 @@
     </div>
   </div>
   <div class="main-content">
-    <div class="container" style="min-height: 1000px">
+    <div class="container">
       <div class="jumbotron">
         <div class="text-center">
           <h1>The world’s platform for change</h1>
-          <p class="current_user">184,424,513 people taking action. <a href="#">Victories every day.</a></p>
+          <p class="current_user">184,424,513 people taking action. 
+            <br class="visible-xs hidden-sm">
+            <a href="#">Victories every day.</a></p>
           <p><button class="btn btn-danger btn-lg" href="#" role="button">Start a petition</button></p>
         </div>
       </div>
@@ -74,11 +76,11 @@
         <div class="col-md-2" style="height:145px;background-color: pink;"></div>
         <div class="col-md-2" style="height:145px;background-color: yellow;"></div>
       </div>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 head-text-whp">
-        <h3 col="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10"> <strong>What's happening on Change.org</strong></h3>
+      <div class="col-xs-12 col-sm-12 col-md-10 head-text-whp">
+        <h3 col="col-xs-12 col-sm-12 col-md-10"> <strong>What's happening on Change.org</strong></h3>
       </div>
 
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10">
+      <div class="col-xs-12 col-sm-12 col-md-10">
         <div class="col panel panel-default">
           <div class="panel-heading head-white">
             <span class="glyphicon glyphicon-tag"></span> Trending in <strong>Human Rights</strong>
@@ -95,14 +97,14 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-right post_ava">
               <img src="https://assets.change.org/photos/3/zn/vh/cTzNvhZIGdFRCbo-400x400-noPad.jpg?1491829040" alt="post_ava">
             </div>
-            <div>
-              <div class="col-md-6 text-left type-avatar">
-                <img src="https://assets.change.org/photos/9/mn/xd/kHMNXdZontgshcn-128x128-noPad.jpg?1462644059" class="img-circle" alt="Cinque Terre"
+            <div class="col-xs-12 col-md-12 contain-author">
+              <div class="col-xs-6 col-md-6 text-left type-avatar">
+                <p class="des_type_avatar"><img src="https://assets.change.org/photos/9/mn/xd/kHMNXdZontgshcn-128x128-noPad.jpg?1462644059" class="img-circle" alt="Cinque Terre"
                   width="30" height="30">
-                <t><strong>Jonathan Bryan </strong>
+                <t><strong>Jonathan Bryan </strong></p>
               </div>
-              <div class="col-md-6 text-right type-supporter">
-                <span class="glyphicon glyphicon-user"></span> 189,414 supporters
+              <div class="col-xs-6 col-md-6 text-right type-supporter">
+                <p class="des_type_supporter"><span class="glyphicon glyphicon-user user-supporter"></span> 189,414 supporters</p>
               </div>
             </div>
           </div>
@@ -110,6 +112,9 @@
       </div>
       <div class="col-md-2">
 
+      </div>
+      <div class="col-md-xs-12 col-sm-12 col-md-10"> 
+        <button class= "load-more">Load more </button>
       </div>
     </div>
     <footer class="footer">
@@ -148,12 +153,13 @@
         </div>
 
       </div>
-      <div class="container">
-        <hr>
+      <div class="container container-footer">
+        <hr class="separate-footer-md">
         <div class="col-xs-12 col-md-6 footer-release">
           <strong>© 2017, Change.org, Inc.</strong>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <hr class="separate-footer-xs" >
+        <div class="col-xs-12 col-md-6 select-lg-div">
           <select class="form-control" id="select-language">
             <option value="de-DE" class="locale">Deutsch</option><option value="en-AU" class="locale">English (Australia)</option><option value="en-CA" class="locale">English (Canada)</option><option selected="selected" value="en-IN" class="locale">English (India)</option><option value="en-GB" class="locale">English (United Kingdom)</option><option value="en-US" class="locale">English (United States)</option><option value="es-AR" class="locale">Español (Argentina)</option><option value="es-ES" class="locale">Español (España)</option><option value="es-419" class="locale">Español (Latinoamérica)</option><option value="fr-FR" class="locale">Français</option><option value="hi-IN" class="locale">हिन्दी</option><option value="id-ID" class="locale">Bahasa Indonesia</option><option value="it-IT" class="locale">Italiano</option><option value="ja-JP" class="locale">日本語</option><option value="pt-BR" class="locale">Português (Brasil)</option><option value="ru-RU" class="locale">Русский</option><option value="th-TH" class="locale">ภาษาไทย</option><option value="tr-TR" class="locale">Türkçe</option>
           </select>

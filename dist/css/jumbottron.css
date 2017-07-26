@@ -5,13 +5,14 @@
 
 .jumbotron .text-center h1 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .jumbotron .text-center .current_user {
     font-style: oblique;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    margin-top: 2rem;
 }
 
 .jumbotron .text-center p a:hover {
@@ -33,7 +34,7 @@
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .jumbotron .text-center h1 {
         font-weight: bold;
         font-size: 3rem;

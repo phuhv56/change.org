@@ -1,3 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #363135;
+    /* background-color: #F6F4F6; */
+}
+
+.container {
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.type-loaded {
+    font-family: "Change Calibre", Helvetica, Arial, Tahoma, sans-serif;
+}
+
+.main-content {
+    width: 100%;
+    background-size: 1200px;
+    background-image: url(../img/background-world-map.gif);
+    background-repeat: no-repeat;
+    background-position: 50% -130px;
+    background-position-x: 50%;
+    background-position-y: -130px;
+}
+
 @media only screen and (min-width: 992px) {
     body .container {
         width: 55%;
@@ -16,17 +52,22 @@
         background-position-y: -130px;
     }
 }
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-.main-content {
-    width: 100%;
-    background-size: 1200px;
-    background-image: url(../img/background-world-map.gif);
-    background-repeat: no-repeat;
-    background-position: 50% -130px;
-    background-position-x: 50%;
-    background-position-y: -130px;
+@media only screen and (max-width: 992px) {
+    .type-loaded {
+        font-family: "Change Calibre", Helvetica, Arial, Tahoma, sans-serif;
+    }
+    .main-content {
+        width: 100%;
+        background-size: 1200px;
+        background-image: url(../img/background-world-map.gif);
+        background-repeat: no-repeat;
+        background-position: 50% -130px;
+        background-position-x: 50%;
+        background-position-y: -130px;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
 }
